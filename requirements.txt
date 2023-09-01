@@ -1,6 +1,6 @@
 
 
-pip
+pip> 23.2.1
 flask
 numpy
 sklearn=1.2.1
