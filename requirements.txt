@@ -1,5 +1,5 @@
 
 
-sklearn
+scikit-learn
 Flask
 numpy
