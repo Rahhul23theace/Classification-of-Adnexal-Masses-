@@ -1,7 +1,7 @@
 
 
 
-
+import os
 from flask import Flask, render_template, request
 import numpy as np
 import pickle
@@ -34,4 +34,6 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    # Use the port specified in the WEBSITE_PORT environment variable or fallback to 8000
+    port = int(os.environ.get('WEBSITE_PORT', 8010))
+    app.run(port=port, debug=True)
