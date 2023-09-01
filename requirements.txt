@@ -3,4 +3,4 @@
 pip
 flask
 numpy
-sklearn
+sklearn=1.2.1
