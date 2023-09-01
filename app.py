@@ -35,5 +35,10 @@ def predict():
 
 if __name__ == "__main__":
     # Use the port specified in the WEBSITE_PORT environment variable or fallback to 8000
+<<<<<<< HEAD
     port = int(os.environ.get('WEBSITE_PORT', 8050))
     app.run(port=port, debug=True)
+=======
+    port = int(os.environ.get('WEBSITE_PORT', 8010))
+    app.run(port=port, debug=True)
+>>>>>>> d14244541a337e16104c7ee827289b13f5dcc8ce
