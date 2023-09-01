@@ -29,8 +29,13 @@ def predict():
     # Make a prediction using the loaded model
     prediction = model.predict(input_features)
 
+    # Map the prediction result to a label
+    label_mapping = {0: 'Benign', 1: 'Malignant'}
+    prediction_label = label_mapping[prediction[0]]
+
     # Return the prediction result
-    return render_template('index.html', prediction_text='Predicted value: {}'.format(prediction[0]))
+    return render_template('index.html', prediction_text='Predicted Label: {}'.format(prediction_label))
+
 
 
 if __name__ == "__main__":
