@@ -39,5 +39,4 @@ if __name__ == "__main__":
     port = int(os.environ.get('WEBSITE_PORT', 8050))
     app.run(port=port, debug=True)
 
-    port = int(os.environ.get('WEBSITE_PORT', 8010))
-    app.run(port=port, debug=True)
+
